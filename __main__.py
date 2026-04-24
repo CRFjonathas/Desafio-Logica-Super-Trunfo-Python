@@ -1,5 +1,8 @@
 from classes.Cadastro import Cadastrar
-from classes.Baralho import Baralho    
+from classes.Baralho import Baralho
+from classes.Jogo import Jogo
+from classes.Carta import Carta
+
 
 def main():
     baralho = Baralho()
@@ -12,6 +15,10 @@ def main():
 
     for cartas in baralho:
         print(cartas) 
+
+    comparacao = Jogo(carta1, carta2)
+
+    print(comparacao.comparar("pontos_turisticos"))
 
 if __name__ == "__main__":
     main()
