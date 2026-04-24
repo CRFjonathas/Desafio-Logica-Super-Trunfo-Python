@@ -20,7 +20,7 @@ class Menu:
             case 1:
                 print(jogo.comparar("_populacao"))
             case 2:
-                print(jogo.comparar("-area"))
+                print(jogo.comparar("_area"))
             case 3:
                 print(jogo.comparar("_pib"))
             case 4:               
