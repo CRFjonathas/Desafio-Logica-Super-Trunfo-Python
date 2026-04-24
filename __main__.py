@@ -2,7 +2,6 @@ from classes.Cadastrar import Cadastrar
 from classes.Baralho import Baralho
 from classes.Jogo import Jogo
 from classes.Menu import Menu
-from classes.Carta import Carta
 
 
 def main():
