@@ -2,7 +2,6 @@ from classes.Cadastrar import Cadastrar
 from classes.Baralho import Baralho
 from classes.Jogo import Jogo
 from classes.Menu import Menu
-from classes.Carta import Carta
 
 
 def main():
@@ -19,7 +18,8 @@ def main():
 
     comparacao = Jogo(carta1, carta2)
 
-    print(Menu.selecionar(comparacao))
+    for c in range(0,2):
+        print(Menu.selecionar(comparacao))
 
 if __name__ == "__main__":
     main()

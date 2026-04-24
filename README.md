@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python Version">
-  <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow?style=for-the-badge" alt="Project Status">
+  <img src="https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge" alt="Project Status">
   <img src="https://img.shields.io/badge/Paradigma-POO-orange?style=for-the-badge" alt="Paradigm">
   <img src="https://img.shields.io/badge/Arquitetura-Clean%20Code-brightgreen?style=for-the-badge" alt="Clean Code">
 </p>
