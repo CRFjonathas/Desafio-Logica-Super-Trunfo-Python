@@ -4,6 +4,17 @@ from classes.Jogo import Jogo
 class Menu:
     @staticmethod
     def selecionar(jogo) -> Jogo:
+        atributos = {
+            1: "_populcao",
+            2: "_area",
+            3: "_pib",
+            4: "pontos_turisticos",
+            5: "densidade_populacional",
+            6: "pib_per_capita",
+            7: "super_poder"
+        }
+
+
         print("\nSELECIONE O ATRIBUTO QUE VOCÊ QUER COMPARAR\n")
         print("1. POPULAÇÃO")
         print("2. ÁREA")
@@ -15,23 +26,13 @@ class Menu:
         print("0. SAIR\n")
 
         opcao = int(input("-> "))
+        
+        if opcao == 0:
+            return "PROGRAMA ENCERRADO!"
 
-        match opcao:
-            case 1:
-                print(jogo.comparar("_populacao"))
-            case 2:
-                print(jogo.comparar("_area"))
-            case 3:
-                print(jogo.comparar("_pib"))
-            case 4:               
-                print(jogo.comparar("pontos_turisticos"))
-            case 5:
-                print(jogo.comparar("densidade_populacional"))
-            case 6:                
-                print(jogo.comparar("pib_per_capita"))
-            case 7:
-                print(jogo.comparar("super_poder"))
-            case 0:
-                print("\nPROGRAMA ENCERRADO.")
-            case _:
-                print("\nOPÇAO INVALIDA!")
+        atributo = atributos.get(opcao)
+
+        if atributo is not None:
+            return jogo.comparar(atributo)
+        elif atributo is None:
+            return "OPÇÃO INVALIDA!"
