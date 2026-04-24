@@ -1,11 +1,8 @@
-from classes.Jogo import Jogo
-
-
 class Menu:
     @staticmethod
-    def selecionar(jogo) -> Jogo:
+    def selecionar(jogo) -> str:
         atributos = {
-            1: "_populcao",
+            1: "_populacao",
             2: "_area",
             3: "_pib",
             4: "pontos_turisticos",
@@ -25,7 +22,10 @@ class Menu:
         print("7. SUPER PODER")
         print("0. SAIR\n")
 
-        opcao = int(input("-> "))
+        try:
+            opcao = int(input("-> "))
+        except ValueError:
+            return "OPÇÃO INVÁLIDA! Por favor, digite apenas números."
         
         if opcao == 0:
             return "PROGRAMA ENCERRADO!"
@@ -34,5 +34,5 @@ class Menu:
 
         if atributo is not None:
             return jogo.comparar(atributo)
-        elif atributo is None:
+        else:
             return "OPÇÃO INVALIDA!"
