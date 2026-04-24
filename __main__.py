@@ -19,7 +19,7 @@ def main():
 
     comparacao = Jogo(carta1, carta2)
 
-    Menu.selecionar(comparacao)
+    print(Menu.selecionar(comparacao))
 
 if __name__ == "__main__":
     main()
