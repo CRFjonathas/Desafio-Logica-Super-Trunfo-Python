@@ -1,4 +1,4 @@
-from classes.Carta import Carta, Cadastrar
+from classes.Cadastro import Cadastrar
     
 
 def main():
