@@ -81,7 +81,7 @@ A arquitetura do projeto foi dividida em classes especializadas, aplicando conce
 
 ### 1. Clonando o Repositório
 ```bash
-git clone [https://github.com/CRFjonathas/Desafio-Logica-Super-Trunfo-Python](https://github.com/CRFjonathas/Desafio-Logica-Super-Trunfo-Python)
+git clone https://github.com/CRFjonathas/Desafio-Logica-Super-Trunfo-Python
 cd Desafio-Logica-Super-Trunfo-Python
 ```
 
