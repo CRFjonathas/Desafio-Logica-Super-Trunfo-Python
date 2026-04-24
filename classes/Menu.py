@@ -1,6 +1,8 @@
 from classes.Jogo import Jogo
 
+
 class Menu:
+    @staticmethod
     def selecionar(jogo) -> Jogo:
         print("\nSELECIONE O ATRIBUTO QUE VOCÊ QUER COMPARAR\n")
         print("1. POPULAÇÃO")
