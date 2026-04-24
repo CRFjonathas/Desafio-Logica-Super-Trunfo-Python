@@ -19,7 +19,8 @@ def main():
 
     comparacao = Jogo(carta1, carta2)
 
-    print(Menu.selecionar(comparacao))
+    for c in range(0,2):
+        print(Menu.selecionar(comparacao))
 
 if __name__ == "__main__":
     main()
