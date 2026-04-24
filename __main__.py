@@ -1,4 +1,4 @@
-from classes.Cadastro import Cadastrar
+from classes.Cadastrar import Cadastrar
 from classes.Baralho import Baralho
 from classes.Jogo import Jogo
 from classes.Menu import Menu

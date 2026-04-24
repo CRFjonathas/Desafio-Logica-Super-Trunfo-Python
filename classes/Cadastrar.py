@@ -2,6 +2,7 @@ from classes.Carta import Carta
 
 
 class Cadastrar:
+    @staticmethod
     def cadastrar_carta() -> Carta:
         print("\nCADASTRO DA CARTA:\n")
 
